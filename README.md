@@ -1,6 +1,8 @@
 # optical-media-tower
 
-Documentation on building a [hybrid DAS optical media tower rig build](res/exterior_3.jpg).
+Documentation on building a hybrid DAS optical media tower rig.
+
+![hybrid DAS optical media tower rig build](res/exterior_3.jpg)
 
 ## Goal
 
@@ -11,7 +13,7 @@ Objectively, such a setup is rarely needed but if you are someone like me with t
 
 ## PC Parts
 
-Most of these parts should be relatively interchangeable with a bit of common sense. For example, even though the new empty Copystars cases are now hard to find, it is still quite easy to get random CD duplicators on eBay which should be possible to use similarly after some gutting. And instead of [individual powered USB-SATA adapters](interior_2.jpg) things like SATA port expanders could theoretically be used. Note that compatibility with optical drives is mixed in some models because that use-case is dwindling in popularity.
+Most of these parts should be relatively interchangeable with a bit of common sense. For example, even though the new empty Copystars cases are now hard to find, it is still quite easy to get random CD duplicators on eBay which should be possible to use similarly after some gutting. And instead of [individual powered USB-SATA adapters](res/interior_2.jpg) things like SATA port expanders could theoretically be used. Note that compatibility with optical drives is mixed in some models because that use-case is dwindling in popularity.
 
 | Part | Price | Notes |
 | --- | --- | --- |
