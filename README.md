@@ -1,23 +1,23 @@
 # optical-media-tower
 
-Documentation on building a hybrid DAS optical media tower rig build.
+Documentation on building a [hybrid DAS optical media tower rig build](res/exterior_3.jpg).
 
 ## Goal
 
-A chassis with an internal PC that can directly read multiple optical drives, but which can also connect to an external PC to expose all those drives over USB, JBOD/DAS-style.
+A chassis with an internal PC that can directly read [multiple optical drives](res/exterior_1.jpg), but which can also connect to an external PC to expose all those drives over USB, JBOD/DAS-style.
 This would be a one-stop shop for all my CD/DVD/BD/UHD disc burning/ripping/copying/testing needs.
 
 Objectively, such a setup is rarely needed but if you are someone like me with thousands of optical discs this kind of thing is almost a must-have. A cheaper alternative would be to use a handful of refurb laptop drives with USB adapters, like the LG BU40N or Chinese cross-flashed Pioneers.
 
 ## PC Parts
 
-Most of these parts should be relatively interchangeable with a bit of common sense. For example, even though the new empty Copystars cases are now hard to find, it is still quite easy to get random CD duplicators on eBay which should be possible to use similarly after some gutting. And instead of individual powered USB-SATA adapters things like SATA port expanders could theoretically be used. Note that compatibility with optical drives is mixed in some models because that use-case is dwindling in popularity.
+Most of these parts should be relatively interchangeable with a bit of common sense. For example, even though the new empty Copystars cases are now hard to find, it is still quite easy to get random CD duplicators on eBay which should be possible to use similarly after some gutting. And instead of [individual powered USB-SATA adapters](interior_2.jpg) things like SATA port expanders could theoretically be used. Note that compatibility with optical drives is mixed in some models because that use-case is dwindling in popularity.
 
 | Part | Price | Notes |
 | --- | --- | --- |
 | [Copystars TW-5](https://www.amazon.ca/dp/B00FPFPR4Y) | 154.32 CAD | "Copystars Duplicator case for Build Blu-ray-CD-DVD-duplicator Tower + Power Supply (5 Bay)". Out of stock |
 | [JetKVM ethernet KVM/IPMI device](https://www.ikoolcore.com/products/jetkvm?variant=51115329388831) | 103.00 USD | Since this is the only device of its kind with native 12V DC power control for mini PCs |
-| [JetKVM DC Power Control Extension](https://www.ikoolcore.com/products/dc-power-control-extension-for-jetkvm?variant=51333765398815) | 20.00 USD | Allows powering on/off the mini PC remotely |
+| [JetKVM DC Power Control Extension](https://www.ikoolcore.com/products/dc-power-control-extension-for-jetkvm?variant=51333765398815) | 20.00 USD | Allows [powering on/off the mini PC remotely](res/screen_jetkvm_dc_power_control.png) |
 | [wo-we H5 Mini PC](https://www.amazon.ca/dp/B0F9FBTXS2): Intel N150 (Twin Lake, 4C4T), 16GB DDR4 RAM, 512GB NVMe M.2 SSD, Dual HDMI, 2.5G RJ45 | 247.47 CAD | Main reason I picked was for the RAM/USB/HDMI configuration. Out of stock; original listing I actually bought from was swapped out for something different, hate Amazon fraud! |
 | [90mm Nylon Magnetic Dust Filter](https://www.amazon.ca/dp/B0D128GN6F) | 14.68 CAD | For rear case intake, had leftovers from this pack |
 | [Cudy 5-Port Gigabit Ethernet Network Switch, USB-C Power Input, GS105U](https://www.amazon.ca/dp/B0DLNBKG9C) | 18.07 CAD | Includes USB-A to USB-C cable for power. A 2.5G switch instead would be ideal to max out the PC's network file transfer speed, but this is cheap and easy |
@@ -49,16 +49,16 @@ Of course, any 5.25in drives can be used. These are the ones I picked to cover a
 
 - Each drive has a WAVLINK SATA adapter, which uses a SATA Male to DC for power and is plugged into the USB hub for connectivity.
 - The USB hub is plugged into the USB-C port on the USB switch.
-- PC port 1 on the USB switch is to the internal mini PC, port 2 is to the external PC.
+- PC port 1 on the USB switch is to the [internal mini PC](res/screen_all_drives_appearing_in_mini_pc_os.png), port 2 is to the [external PC](res/screen_all_drives_plus_one_more_appearing_in_external_usb-c_pc.png).
 - Network switch: USB power from the hub.
 
 ## Quirks
 
-- Double sided tape used all over.
+- [Double sided tape used all over.](res/interior_1.jpg)
 - Cables for the SATA adapters are too long so they all had to be carefully wrapped and organized below the bottom disc reader to get out of the way.
 - Case PSU has only female SATA power connectors which is one reason for the weird workarounds.
 - Flipped rear fan to intake, added magnetic dust filter since the PSU is already exhausting air from inside.
-- Need to make sure the PSU is powered on before the USB is plugged into another source, or the drives won't initialize to the external source.
+- [Need to make sure the PSU is powered on before the USB is plugged into another source](res/exterior_2.jpg), or the drives won't initialize to the external source.
 - Need to avoid pressing the switch while the drives are actually being used.
 - Finicky USB hub due to power switches.
 - Need to go into BIOS to set always booting up on power reconnection after loss.
